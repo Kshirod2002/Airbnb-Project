@@ -1,0 +1,29 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="row mt-3">
+    <h3 class="col-6 offset-3 h3" >BOOKING YOUR HOME </h3>
+    <marquee behavior="alternate"><span class="marquee">"Don't wait, book that home and make it happen!"</span></marquee>
+
+    <div class="col-6 offset-3 background" >
+      <form action="/listings/<%= listing._id %>/booking" method="POST" class="needs-validation" novalidate>
+        <div class="mb-3">
+            <label for="customerName" class="form-label">Customer Name:</label>
+            <input name="booking[customerName]" id="username"  type="text" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input name="booking[email]" id="email"  type="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="address" class="form-label">Address:</label>
+            <input name="booking[address]" id="address"  type="Address" class="form-control" required>
+        </div>
+        <div>
+        Starting Date: <input type="date" name="dt" id="dt" value=""/>
+        &nbsp;
+        Ending Date: <input type="date" name="dt" id="dt" value=""/>
+        </div><br>
+        <button class="btn btn-success">Booking</button>
+      </form>
+    </div>
+    </div>

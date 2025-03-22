@@ -1,0 +1,129 @@
+/* General layout */
+body{
+   display: flex;
+   flex-direction: column;/* Ensures content flows vertically */
+   min-height: 100vh;/* Sets the height to cover the entire viewport */
+} 
+.container{
+     flex: 1;
+ }    
+/* Navbar */
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+.fa-compass{
+    color: red;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #222222 ;
+}
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info-links, .f-info-socials, .f-info-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;/* Aligns items vertically */
+    justify-content: center;/* Centers items horizontally */
+    flex-wrap: wrap;
+}
+.f-info-socials i{
+    font-size: 1.2rem;
+    margin-right: 2rem; 
+    
+}
+
+.f-info{
+    text-align: center;
+    height: 8rem;
+    background-color:#ebebeb ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* Listing card styles */
+.listing-card{
+    border: none;
+    margin-bottom: 2rem;
+}
+.card-img-top {
+    border-radius: 1rem;
+    width: 100%;
+    object-fit: cover;
+}
+.card-body{
+    padding: 0;
+}
+.card-text p{
+   font-weight: 400;
+}
+.listing-link{
+    text-decoration: none;
+}
+/* Card effect */
+.card-img-overlay{
+    opacity: 0;
+}
+.card:hover .card-img-overlay {
+    opacity: 0.2;
+    background-color: white;
+}
+.overlay-text {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  /* Button */
+  .btn{
+    background-color: #68fe42 !important;
+    background-image: linear-gradient(rgb(120, 159, 230), rgba(111, 247, 202, 0.555));
+    border: none !important;
+  }
+  /* Book page */
+  .book-btn{
+    background-image: linear-gradient(rgb(0, 255, 200), rgba(255, 255, 0, 0.747));
+    border: none !important;
+    
+  }
+  /* Show page */
+  .show-img{
+    height: 30vh;
+  }
+  .btns{
+     display: flex; 
+  }
+  .show-card{
+    padding-left: 0;
+    padding-right:0;
+  }
+
+  /* Map */
+  #map {
+    height: 400px;
+    width: 80vh;
+    border-radius: 40px;
+    border: 3px solid rgb(0, 162, 255);
+  }
+  /* Form Design */
+  .background{
+    color: black;
+    background-image: linear-gradient(rgb(123, 237, 245), #f8a9e4);
+    border-radius: 20px;
+  }
+  .marquee{
+    font-size:15px;
+    background-image: linear-gradient(rgb(123, 245, 188), #cef38e);
+    /* color: rgba(31, 233, 172, 0.849); */
+  }
+  .h3{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 7px  #77ecc5;
+    background-color: #eed4d6;
+}
